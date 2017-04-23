@@ -146,8 +146,8 @@ starttime <- now()
 # UCR_temp <- as.data.frame(matrix(1:3,nrow = 1))
 # colnames(UCR_temp) <- c("A","B","C")
 # UCR_df <- rbind(UCR_df,UCR_temp)
-for(j in 2013:2013) {
-  print("Starting data for year ",j)
+for(j in 1994:2012) {
+  cat("Starting data for year ",j)
   write_csv(collect_UCR_For_Years(j,j),paste0("UCR_",j,".csv"))
 }
 
